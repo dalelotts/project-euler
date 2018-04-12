@@ -16,7 +16,7 @@ Answer: `4613732`
 `Brute force approach`: I started at 2 and calculated the next Fibonacci
 number using `currentFibonacci = Math.round( currentFibonacci * PHI )`. If the next Fibonacci
 number is even, add it to the sum. I completely missed that every third Fibonacci number
-is event. 
+is even. 
 
 ```javascript
 const PHI = 1.618033988749895
@@ -49,12 +49,13 @@ const SQUARE_ROOT_OF_5 = 2.23606797749979
 function sumEvenFibonacciNumbers () {
   let sum = 0
   let index = 3
-  let nthFibonacciValue = nthFibonacci(3)
+  let currentFibonacci = 2
 
-  while (nthFibonacciValue < 4000000) {
-    sum += nthFibonacciValue
+  // every third Fibonacci number is even so calculate that number and it to the sum.
+  while (currentFibonacci < 4000000) {
+    sum += currentFibonacci
     index += 3
-    nthFibonacciValue = nthFibonacci(index)
+    currentFibonacci = nthFibonacci(index)
   }
   return sum
 }
