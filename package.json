@@ -1,0 +1,25 @@
+{
+  "name": "projecteuler",
+  "version": "1.0.0",
+  "description": "projecteuler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jasmine"
+  },
+  "author": "Dale 'Ducky' Lotts",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "jasmine": "latest"
+  },
+  "dependencies": {
+    "standard": "^11.0.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect"
+    ]
+  }
+}
