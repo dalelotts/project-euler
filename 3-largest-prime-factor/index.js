@@ -2,6 +2,7 @@ function largestPrimeFactor (value) {
   let maxFactor = 1
 
   while (value % 2 === 0) {
+    maxFactor = 2
     value /= 2
   }
 
