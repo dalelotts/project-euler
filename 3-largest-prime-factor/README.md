@@ -13,7 +13,7 @@ Answer: `6857`
 1. Divide by 2 until the remaining `value` modulo 2 is not equal to zero.
 1. Divide remaining `value` by three and all odd numbers less than the square root 
    of the remaining `value`, saving the modulo zero numbers as largest prime.
-1. Return the saved prime.
+1. Return the max of the saved prime and the remaining value.
 
 
 
