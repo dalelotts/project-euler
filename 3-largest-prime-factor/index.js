@@ -15,7 +15,7 @@ function largestPrimeFactor (value) {
     }
   }
 
-  return maxFactor
+  return Math.max(value, maxFactor)
 }
 
 console.log(largestPrimeFactor(600851475143))
